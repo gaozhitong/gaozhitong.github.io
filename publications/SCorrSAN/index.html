@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+p {
+  font-size: 15px;
+}
+
+</style>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>SCorrSAN</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <link rel="icon" type="image/png" href="img/seal_icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110862391-1');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main" >
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+              Learning Semantic Correspondence with Sparse Annotations</br> 
+                <small>
+                    ECCV 2022 
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                      <a href="https://shuaiyihuang.github.io/"><strong>Shuaiyi Huang<sup>1</sup></strong></a>,
+                      <a href="https://www.loyo.me/">Luyu Yang<sup>1</sup></a>,
+                      <a href="https://boheumd.github.io/">Bo He<sup>1</sup></a>,
+                      <a href="https://www.zhangsongyang.com/">Songyang Zhang<sup>2</sup></a>,
+                      <a href="https://xmhe.bitbucket.io/">Xuming He<sup>3</sup></a>,
+                      <a href="https://www.cs.umd.edu/~abhinav/">Abhinav Shrivastava<sup>1</sup></a>
+                    </li>
+                </ul>
+                <sup>1</sup> University of Maryland, College Park &emsp; <sup>2</sup> Shanghai AI Laboratory &emsp; <sup>3</sup> ShanghaiTech University, China
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/pdf/2208.06974.pdf">
+                               <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/shuaiyihuang/SCorrSAN">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                  Finding dense semantic correspondence is a fundamental problem in computer vision, which remains challenging in complex scenes due to background clutter, extreme intra-class variation, and a severe lack of ground truth. In this paper, we aim to address the challenge of label sparsity in semantic correspondence by enriching supervision signals from sparse keypoint annotations. 
+                  To this end, we first propose a teacher-student learning paradigm for generating dense pseudo-labels and then develop two novel strategies for denoising pseudo-labels. In particular, we use spatial priors around the sparse annotations to suppress the noisy pseudo-labels. In addition, we introduce a loss-driven dynamic label selection strategy for label denoising. We instantiate our paradigm with two variants of learning strategies: a single offline teacher setting, and mutual online teachers setting. Our approach achieves notable improvements on three challenging benchmarks for semantic correspondence and establishes the new state-of-the-art. Project page: https://shuaiyihuang.github.io/publications/SCorrSAN. 
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>Motivation</h3>
+                <p class="text-justify">
+                  Due to the high cost of dense annotation, the semantic correspondence
+                  task only provides sparse keypoint annotations in the supervised setting. In this paper, we are motivated by how to better utilize the limited
+                  supervision. Specifically, we explore the techniques to generate pseudo-labels.
+                  However, due to the inevitably noisy effect of pseudo-labels, filtering out noisy
+                  pseudo-labels remains a challenging problem. Our key observation is that sparse
+                  keypoint annotations and their neighborhood encode rich semantic information.
+                  By utilizing this spatial prior, one can seek reliable pseudo-labels that are more
+                  likely in the foreground region of interest.
+                </p>
+                <p style="text-align:center;">
+                    <image src="images/teaser.png" height="290px" >
+                </p>
+                
+                <h3>Method overview</h3>
+                <p class="text-justify">
+                  We introduce a novel teacher-student learning paradigm to enrich the supervision guidance when only sparse annotations are available. Two key techniques are a novel spatial-prior based label filtering and a loss-driven
+                  dynamic label selection strategy for high-quality pseudo-label generation.
+                  <!-- <ul>
+                  <li>TODO A.</li>
+                  <li>TODO B.</li>
+                  <li>TODO C.</li>
+                  </ul> -->
+                </p>
+                <p style="text-align:center;">
+                  <image src="images/method.png" height="400px" >
+                </p>
+
+                <h3>Model overview</h3>
+                <p class="text-justify">
+                  We instantiate our novel learning strategy based on our proposed simple,
+                  yet effective network architecture for semantic correspondence without any transformer or 4D-conv for correlation refinement. The key ingredients
+                  are an efficient spatial context encoder and a high-resolution loss. The proposed network comprises three modules:
+                    <ul>
+                    <li>a feature extractor equipped with our
+                      efficient spatial context encoder </li>
+                    <li>a parameter-free correlation map module</li>
+                    <li>a flow estimator with high-resolution loss</li>
+                    </ul>
+                </p>
+                <p style="text-align:center;">
+                    <image src="images/overview.png" height="260px" >
+                </p>
+
+
+                <h3>Experiments</h3>
+                <h4>SPair-71k Dataset</h4>
+                <p style="text-align:center;">
+                    <image src="images/exp_spair.png" height="360px" >
+                </p>
+
+                <h4>PF-PASCAL Dataset & PF-WILLOW Dataset</h4>
+                <p style="text-align:center;">
+                    <image src="images/exp_pfpascal.png" height="290px" >&emsp;
+                      <image src="images/exp_pfwillow.png" height="290px" >
+                </p>
+
+                <!-- <h4>PF-WILLOW Dataset</h4> -->
+                <!-- <p style="text-align:center;">
+                    <image src="images/exp_pfwillow.png" height="300px" >
+                </p> -->
+
+                <h4>Qualitative</h4>
+                <p style="text-align:center;">
+                    <image src="images/vis_spair2.png" height="460px"></image>
+                </p>
+            </div>
+        </div>
+
+
+        <hr style="max-width: 880px;">
+        <div class="container" style="max-width: 880px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Citation</h3>
+                        <code>
+                        @inproceedings{huang2022learning,<br>
+                        &nbsp; title  = {Learning Semantic Correspondence with Sparse Annotations},<br>
+                        &nbsp; author = {Huang, Shuaiyi and Yang, Luyu and He, Bo and Zhang, Songyang and He, Xuming and Shrivastava, Abhinav},<br>
+                        &nbsp; booktitle = {Proceedings of the European Conference on Computer Vision(ECCV)},<br>
+                        &nbsp; year   = {2022},<br>
+                    }</code></div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <br> The website template was borrowed from <a href="https://bmild.github.io">Ben Mildenhall</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
