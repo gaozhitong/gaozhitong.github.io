@@ -17,6 +17,7 @@
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
     <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="css/bootstrap-navbar-custom.css">
@@ -63,9 +64,9 @@
               <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
               <li><a class="page-scroll" href="#about">About</a></li>
               <li><a class="page-scroll" href="#news">News</a></li>
-              <li><a class="page-scroll" href="#services">Services</a></li>
-              <li><a class="page-scroll" href="#education">Education</a></li>
               <li><a class="page-scroll" href="#publication">Publications & Projects</a></li>
+              <li><a class="page-scroll" href="#education">Education</a></li>
+              <li><a class="page-scroll" href="#services">Services</a></li>
               <!-- <li><a class="page-scroll" href="#project">Projects</a></li> -->
 
               <!-- <li><a class="page-scroll" href="#activity">Activities</a></li> -->
@@ -100,18 +101,18 @@
               <div><a href="https://sist.shanghaitech.edu.cn/" target="_blank">Department of Computer Science</a></div>
               <div><a href="https://www.shanghaitech.edu.cn/" target="_blank">ShanghaiTech University</a></div>
 
-              <div class="address"> No.393 Huaxia Middle Road, Pudong, Shanghai</div>
-              <div class="zipcode">201210</div> 
+              <div class='address'> No.393 Huaxia Middle Road, Pudong, Shanghai</div>
+              <div class="address">201210</div>
 
-              <div class='email'>gaozht@shanghaitech.edu.cn</div>
             </div>
 
 
            <div class="social-links ">
              <!-- <a href="https://www.linkedin.com/in/shuaiyi-huang-254a6b1b1/" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a> -->
-             <a href="https://github.com/gaozhitong" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
              <a href="https://scholar.google.com/citations?hl=zh-CN&user=XAWSPo8AAAAJ" target="_blank"><i class="fa fa-graduation-cap fa-3x"></i></a>
-            <!-- <a href="CV_ShuaiyiHuang_20201220.pdf" target="_blank"><i class="fa fa-file fa-3x"></i></a> -->
+             <a href="https://github.com/gaozhitong" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+             <a href="mailto:gaozht@shanghaitech.edu.cn" target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
+             <a href="cv/0626_cv.pdf" target="_blank"><i class="fa fa-user fa-3x"></i></i></a>
 
            </div>
 
@@ -132,15 +133,19 @@
             <hr>
             <div class="spacer"></div>
             <p>
-              I am a 2rd-year Master student in Computer Science at ShanghaiTech University, China working with Prof. <a href="https://xmhe.bitbucket.io/" target="blank">Xuming He</a>.
-              Before that, I obtained my Bachelor's degree in Computer Science from ShanghaiTech University, China in 2021. 
+              <p>
+              I am a second-year master’s student in Computer Science at ShanghaiTech University, supervised by Prof. <a href="https://xmhe.bitbucket.io/" target="blank">Xuming He</a>.
+              My research interests broadly include <b>Computer Vision</b> and <b>Deep Learning</b>, with a focus on <span style="color: green;"><b>constructing robust and safe structure-prediction models in situations fraught with uncertainty.</b></span>
+              In pursuit of this goal, my current research work involves tackling learning problems such as <b>learning with noisy labels</b>, <b>aleatoric uncertainty estimation</b>, and <b>out-of-distribution detection</b>,
+              primarily within the context of semantic segmentation.
+              </p>
             </p>
             <p>
-              My research interests broadly include <b>Computer Vision</b> and <b>Deep Learning</b>, with a focus on scene understanding and low-level vision using strong or weak supervision in the open world scenario. 
-              I am especially interested in <b>robust learning</b>, <b>segmentation</b>, <b>uncertainty estimation</b>, <b>out-of-distribution detection</b>, and
-              <b>out-of-distribution generalization</b>. 
-              I am looking for a Ph.D. position in relevant fields in Fall 2024. 
-              <!-- Here is my <a href="CV_ShuaiyiHuang_20191226.pdf" target="blank"><b>CV</b></a>.  -->
+              <span style="color: red;">
+                I am actively seeking a Ph.D. position in relevant fields starting from Fall 2024.</span>
+                Here is my <a href="cv/0626_cv.pdf" target="blank"><b>CV</b></a>.
+                If you are aware of suitable positions, please feel free to reach out to me at <a href="mailto:gaozht@shanghaitech.edu.cn">gaozht@shanghaitech.edu.cn</a>.  I would greatly appreciate your assistance. </span>
+
             </p>
 
           </div>
@@ -158,8 +163,10 @@
             <hr>
             <div class="spacer"></div>
             <ul>
-              <li><span class=""></span> 01/2023: One paper is accepted by <b>ICLR 2023</b></li>
-              <li><span class=""></span> 06/2021: One paper is accepted by <b>MICCAI 2021</b></li>
+              <li><span class=""></span> 05/2023: I attended the ICLR conference onsite in Kigali!</b></li>
+              <li><span class=""></span> 04/2023: One paper is accepted by <b>IJICAI 2023</b>.</li>
+              <li><span class=""></span> 01/2023: One paper is accepted by <b>ICLR 2023</b>.</li>
+              <li><span class=""></span> 06/2021: One paper is accepted by <b>MICCAI 2021</b>.</li>
             </ul>
 
           </div>
@@ -169,8 +176,142 @@
     </section>
 
 
+    <section id="publication" class="publication-section">
+      <div class="container">
+        <h2>Publications & Projects</h2>
+        <hr>
+        <div class="spacer"></div>
 
-<section id="education" class="education-section">
+        <style>
+        .links a {
+          margin-right: 3px;
+        }
+      </style>
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="images/iclr23.png">
+              <img src="images/iclr23.png" class="img-thumbnail img-responsive">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="paper">Modeling Multimodal Aleatoric Uncertainty in Segmentation with Mixture of Stochastic Experts</div>
+            <div class="links">
+              <a class="pdf-link" href="https://openreview.net/pdf?id=KE_wJD2RK4" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> [PDF]</a>
+              <a class="code-link" href="https://github.com/gaozhitong/MoSE-AUSeg" target="_blank"><i class="fa fa-github fa-fw"></i> [Code]</a>
+              <a class="poster-link" href="posters/poster-iclr.pdf" target="_blank"><i class="fa fa-image fa-fw"></i> [Poster]</a>
+              <a class="video-link" href="https://youtu.be/SVyqWKnR_pQ" target="_blank"><i class="fa fa-youtube-play fa-fw"></i>[Video]</a>
+            </div>
+            <div class="author"><b>Zhitong Gao</b>, Yucong Chen, Chuyu Zhang, Xuming He</div>
+            <div class="conf">International Conference on Learning Representations <b>(ICLR)</b>, 2023</div>
+            <div class="tag">
+              <span class="label label-success">Semantic Segmentation</span>
+              <span class="label label-primary">Aleatoric Uncertainty</span>
+              <span class="label label-primary">Stochastic Segmentation</span>
+              <span class="label label-primary">Multiple Annotations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="images/iclr23.png">
+              <img src="images/ijicai.jpg" class="img-thumbnail img-responsive">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="paper">MILD: Modeling the Instance Learning Dynamics for Learning with Noisy Labels</div>
+            <div class="links">
+              <a class="pdf-link" href="https://arxiv.org/pdf/2306.11560.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> [PDF]</a>
+              <a class="code-link" href="https://github.com/Hcyang-NULL/MILD" target="_blank"><i class="fa fa-github fa-fw"></i> [Code]</a>
+            </div>
+            <div class="author">Chuanyang Hu, Shipeng Yan, <b>Zhitong Gao</b>, Xuming He</div>
+            <div class="conf">International Joint Conference on Artificial Intelligence <b>(IJICAI)</b>, 2023</div>
+            <div class="tag">
+              <span class="label label-success">Classification</span>
+              <span class="label label-primary">Robust learning</span>
+              <span class="label label-primary">Weak supervision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="images/miccai21_.png">
+              <img src="images/miccai21_.png" class="img-thumbnail img-responsive">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="paper">Superpixel-guided Iterative Learning from Noisy Labels for Medical Image Segmentation</div>
+            <div class="links">
+              <a class="pdf-link" href="https://arxiv.org/abs/2107.10100" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> [PDF]</a>
+              <a class="code-link" href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="_blank"><i class="fa fa-github fa-fw"></i> [Code]</a>
+              <a class="poster-link" href="posters/poster-miccai.pdf" target="_blank"><i class="fa fa-image fa-fw"></i> [Poster]</a>
+              <a class="video-link" href="https://www.youtube.com/watch?v=EviOSZfXjMg" target="_blank"><i class="fa fa-youtube-play fa-fw"></i>[Video]</a>
+            </div>
+            <div class="author">Shuailin Li*, <b>Zhitong Gao*</b>, Xuming He</div>
+            <div class="conf">International Conference on Medical Image Computing and Computer Assisted Intervention <b>(MICCAI)</b>, 2021</div>
+            <div class="tag">
+              <span class="label label-success">Semantic Segmentation</span>
+              <span class="label label-primary">Robust learning</span>
+              <span class="label label-primary">Weak supervision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="images/project_ml.png">
+              <img src="images/project_ml.png" class="img-thumbnail img-responsive">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="paper">Generalized DUQ: Generalized Deterministic Uncertainty Quantification</div>
+            <div class="links">
+              <a class="pdf-link" href="https://adonis-galaxy.github.io/homepage/research/ML_CS282_project.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> [Report]</a>
+            </div>
+            <div class="author"><b>Zhitong Gao*</b>, Ziyao Zeng*</div>
+<!--            <font color="gray"><b> (i)We propose Generalized DUQ to extend the original uncertainty estimation of only utilizing its nearest centroid to utilize the nearest k centroids.-->
+<!--              (ii) Compared with DUQ, we achieve a better generlization on Two Moons, FashionMNIST VS MNIST/NotMNIST, and CIFAR-10 VS SVHN.-->
+            <div class="conf">Final Project of CS282 Machine Learning, 2021 Spring, ShanghaiTech University</div>
+            <div class="tag">
+              <span class="label label-success">Uncertainty Quantification</span>
+              <span class="label label-primary">Aleatoric Uncertainty</span>
+              <span class="label label-primary">Epistemic Uncertainty</span>
+            </div>
+           <!--            <div><i class=""></i><a href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="blank">Code</a></div>-->
+          </div>
+        </div>
+
+                <div class="row item">
+          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
+            <a class="image-popup-no-margins" href="images/project_dl.png">
+              <img src="images/project_dl.png" class="img-thumbnail img-responsive">
+            </a>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
+            <div class="paper">Seek Common while Shelving Differences: A New Way for dealing with Noisy Labels</div>
+            <div class="links">
+              <a class="pdf-link" href="https://adonis-galaxy.github.io/homepage/research/DL_CS280_project.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i> [Report]</a>
+            </div>
+            <div class="author"><b>Zhitong Gao*</b>, Ziyao Zeng*</div>
+            <div class="conf">Final Project of CS280 Deep Learning, 2020 Fall, ShanghaiTech University</div>
+            <div class="tag">
+              <span class="label label-success">Robust Learning</span>
+              <span class="label label-primary">Noisy label</span>
+            </div>
+<!--            <div class=""> - We propose SCSD, which combines both the benefits of “cross training” and “agreement” by introducing a tri-net framework, to deal with learning with noisy labels.</div>-->
+<!--            <div class=""> - Extensive experimental results on corrupted data from benchmark datasets including MNIST, CIFAR-10, CIFAR-100 demonstrate that SCSD is superior to many state-of-the-art approaches.</div>-->
+<!--            <div><i class=""></i><a href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="blank">Code</a></div>-->
+          </div>
+        </div>
+      
+        Note: * indicates equal contribution.
+
+      </div> 
+    </section> -->
+
+    <section id="education" class="education-section">
       <div class="container">
         <h2>Education</h2>
         <hr>
@@ -216,102 +357,6 @@
 
       </div> <!-- end of Education -->
     </section>
-
-    <section id="publication" class="publication-section">
-      <div class="container">
-        <h2>Publications & Projects</h2>
-        <hr>
-        <div class="spacer"></div>
-
-        <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins" href="images/iclr23.png">
-              <img src="images/iclr23.png" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Modeling Multimodal Aleatoric Uncertainty in Segmentation with Mixture of Stochastic Experts </div>
-            <div class="author"><b>Zhitong Gao</b>, Yucong Chen, Chuyu Zhang, Xuming He</div>
-            <div class="conf">International Conference on Learning Representations <b>(ICLR)</b>, 2023</div>
-            <div class="tag">
-              <span class="label label-success">Semantic Segmentation</span>
-              <span class="label label-primary">Aleatoric Uncertainty</span>
-              <span class="label label-primary">Stochastic Segmentation</span>
-              <span class="label label-primary">Multiple Annotations</span>
-            </div>
-            <div><i class="fa fa-file-pdf-o fa-fw"></i><a href="https://openreview.net/pdf?id=KE_wJD2RK4" target="blank">PDF</a></div>
-            <div><i class=""></i><a href="https://github.com/gaozhitong/MoSE-AUSeg" target="blank">Code</a></div>
-          </div>
-        </div>
-
-        <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins" href="images/miccai21_.png">
-              <img src="images/miccai21_.png" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Superpixel-guided Iterative Learning from Noisy Labels for Medical Image Segmentation</div>
-            <div class="author">Shuailin Li*, <b>Zhitong Gao*</b>, Xuming He</div>
-            <div class="conf">International Conference on Medical Image Computing and Computer Assisted Intervention <b>(MICCAI)</b>, 2021</div>
-            <div class="tag">
-              <span class="label label-success">Semantic Segmentation</span>
-              <span class="label label-primary">Robust learning</span>
-              <span class="label label-primary">Weak supervision</span>
-            </div>
-            <div><i class="fa fa-file-pdf-o fa-fw"></i><a href="https://miccai2021.org/openaccess/paperlinks/2021/09/01/460-Paper1575.html#author-id" target="blank">PDF</a></div>
-            <div><i class=""></i><a href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="blank">Code</a></div>
-          </div>
-        </div>
-
-        <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins" href="images/project_ml.png">
-              <img src="images/project_ml.png" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Generalized DUQ: Generalized Deterministic Uncertainty Quantification</div>
-            <div class="author"><b>Zhitong Gao*</b>, Ziyao Zeng*</div>
-<!--            <font color="gray"><b> (i)We propose Generalized DUQ to extend the original uncertainty estimation of only utilizing its nearest centroid to utilize the nearest k centroids.-->
-<!--              (ii) Compared with DUQ, we achieve a better generlization on Two Moons, FashionMNIST VS MNIST/NotMNIST, and CIFAR-10 VS SVHN.-->
-            <div class="conf">Final Project of CS282 Machine Learning, 2021 Spring, ShanghaiTech University</div>
-            <div class="tag">
-              <span class="label label-success">Uncertainty Quantification</span>
-              <span class="label label-primary">Aleatoric Uncertainty</span>
-              <span class="label label-primary">Epistemic Uncertainty</span>
-            </div>
-            <div><i class="fa fa-file-pdf-o fa-fw"></i><a href="https://adonis-galaxy.github.io/homepage/research/ML_CS282_project.pdf" target="blank">PDF</a></div>
-<!--            <div><i class=""></i><a href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="blank">Code</a></div>-->
-          </div>
-        </div>
-
-                <div class="row item">
-          <div class="col-md-4 col-sm-6 col-xs-12 item-img">
-            <a class="image-popup-no-margins" href="images/project_dl.png">
-              <img src="images/project_dl.png" class="img-thumbnail img-responsive">
-            </a>
-          </div>
-          <div class="col-md-8 col-sm-6 col-xs-12 item-info">
-            <div class="paper">Seek Common while Shelving Differences: A New Way for dealing with Noisy Labels</div>
-            <div class="author"><b>Zhitong Gao*</b>, Ziyao Zeng*</div>
-            <div class="conf">Final Project of CS280 Deep Learning, 2020 Fall, ShanghaiTech University</div>
-            <div class="tag">
-              <span class="label label-success">Robust Learning</span>
-              <span class="label label-primary">Noisy label</span>
-            </div>
-<!--            <div class=""> - We propose SCSD, which combines both the benefits of “cross training” and “agreement” by introducing a tri-net framework, to deal with learning with noisy labels.</div>-->
-<!--            <div class=""> - Extensive experimental results on corrupted data from benchmark datasets including MNIST, CIFAR-10, CIFAR-100 demonstrate that SCSD is superior to many state-of-the-art approaches.</div>-->
-            <div><i class="fa fa-file-pdf-o fa-fw"></i><a href="https://adonis-galaxy.github.io/homepage/research/DL_CS280_project.pdf" target="blank">PDF</a></div>
-<!--            <div><i class=""></i><a href="https://github.com/gaozhitong/SP_guided_Noisy_Label_Seg" target="blank">Code</a></div>-->
-          </div>
-        </div>
-      
-        Note: * indicates equal contribution.
-
-      </div> 
-    </section> -->
-
     <section id="services" class="services-section">
 
       <div class="container">
