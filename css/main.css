@@ -243,7 +243,7 @@ hr {
 
 
 #home {
-    background: url(../images/backtheme.jpg) no-repeat fixed center;
+    background: url(../images/20230627-235718.jpg) no-repeat fixed center;
     height: auto;
     width: 100%;
     margin: 0 0;
@@ -253,7 +253,14 @@ hr {
     background-size: cover;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
-
+#home::after {
+    content: "Photo taken by me in Shanghai.";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-size: 12px;
+}
 
 .about-section {
     height: auto;
@@ -356,7 +363,7 @@ hr {
   vertical-align: center;
   position: relative;
   font-size: 18px;
-  background-color: rgba(30%,30%,30%,0.5);
+  background-color: rgba(30%,30%,30%,0.7);
   border-radius: 20px;
   padding-top: 10px;
   padding-left: 10px;
