@@ -2455,6 +2455,7 @@ input[type="month"].input-lg {
   vertical-align: middle;
   cursor: pointer;
 }
+
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
   margin-top: 0;

@@ -55,7 +55,7 @@ a:hover{
 .profile{
   color: #DDDDDD;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .profile-img{
@@ -90,8 +90,18 @@ a:hover{
   /*float: left;*/
 }
 
-.social-links {
- /* float: right;*/
+.social-links a {
+  display: inline-block; /* 或者 'block'，根据需要 */
+  text-align: center; /* 确保图标和文字居中对齐 */
+  margin: 0 10px; /* 在链接之间添加一些水平间距 */
+}
+
+.social-links a i {
+  display: block; /* 确保图标独占一行 */
+}
+
+.social-links a div {
+  margin-top: 5px; /* 图标和文字之间的间距 */
 }
 
 .social-links > a {
@@ -240,8 +250,6 @@ hr {
 }
 
 
-
-
 #home {
     background: url(../images/20230627-235718.jpg) no-repeat fixed center;
     height: auto;
@@ -293,11 +301,21 @@ hr {
 .project-section {
     height: auto;
     font-size: 16px;
-    background: #f7f7f7;
+    background: #ffffff;
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
+
+.challenge-section {
+    height: auto;
+    font-size: 16px;
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
 
 
 .education-section {
@@ -333,6 +351,11 @@ hr {
   margin: 20px 0px;
   background-color: #555555 !important;
 }
+.news-list-container {
+    max-height: 200px; /* 设置最大高度以允许滚动 */
+    overflow-y: auto; /* 允许在垂直方向上滚动 */
+    /* 如果需要，您可以在这里添加其他样式 */
+}
 
 /* navbar fade effect */
 .navbar-fixed-top { background-color: rgba(45,45,45,0.5);transition: background-color 2s ease 0s;}
@@ -359,7 +382,7 @@ hr {
 /*}*/
 
 .profile-info{
-  height: 350px;
+  height: 270px;
   vertical-align: center;
   position: relative;
   font-size: 18px;
