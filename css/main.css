@@ -92,7 +92,7 @@ a:hover{
 .social-links a {
   display: inline-block; /* 或者 'block'，根据需要 */
   text-align: center; /* 确保图标和文字居中对齐 */
-  margin: 0 10px; /* 在链接之间添加一些水平间距 */
+  margin: 0 15px; /* 在链接之间添加一些水平间距 */
 }
 
 .social-links a i {
