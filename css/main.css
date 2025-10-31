@@ -63,7 +63,6 @@ a:hover{
   max-width: 270px;
   max-height: 50px;
 
-
   /*margin: 0px 20px 0px;
   border-style: solid;
   border-color: red;*/
@@ -150,9 +149,21 @@ hr {
 
 
 .item{
-  min-height: 150px;
+  min-height: 220px;
+  height: 220px;
   overflow: hidden;
   padding-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.year-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00337D;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #00337D;
 }
 
 
@@ -192,10 +203,29 @@ hr {
   margin: 5px auto 0px;
 }
 
+.author::before {
+  content: "\f007  ";
+  font-family: FontAwesome;
+  margin-right: 8px;
+  color: #555;
+}
+
 .conf{
   font-size: 16px !important;
   font-style: italic !important;
   margin: 5px auto 0px;
+  color: #000000 !important;
+}
+
+.conf b{
+  color: #000000 !important;
+}
+
+.conf::before {
+  content: "\f02d  ";
+  font-family: FontAwesome;
+  margin-right: 8px;
+  color: #555;
 }
 
 
@@ -257,7 +287,7 @@ hr {
     margin: 0 0;
     position: relative;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    padding: 100px 0px;
+    padding: 80px 0px;
     background-size: cover;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
@@ -336,6 +366,15 @@ hr {
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
 }
 
+.awards-section {
+    height: auto;
+    font-size: 16px;
+    background: #f7f7f7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
 .services-section {
     height: auto;
     font-size: 16px;
@@ -343,6 +382,25 @@ hr {
     padding-top: 40px;
     padding-bottom: 40px;
     font-family: Palatino Linotype, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+
+.services-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00337D;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 4px solid #00337D;
+}
+
+.services-section ul {
+    margin-left: 20px;
+}
+
+.services-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 .spacer{
@@ -382,15 +440,16 @@ hr {
 /*}*/
 
 .profile-info{
-  height: 270px;
+  height: auto;
+  min-height: 270px;
+  max-width: 700px;
   vertical-align: center;
   position: relative;
   font-size: 18px;
-  background-color: rgba(30%,30%,30%,0.7);
+  background-color: rgba(30%,30%,30%,0.75);
   border-radius: 20px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding: 20px 25px;
+  margin-left: 50px;
   /*
   border-style: solid;
   border-color: yellow;
